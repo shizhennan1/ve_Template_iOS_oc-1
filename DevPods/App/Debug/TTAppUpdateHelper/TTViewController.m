@@ -38,8 +38,15 @@
         self.updateHelper = defaultHelper;
         self.updateHelper.callType = @(0);
         self.updateHelper.city = @"Shanghai";
-        [defaultHelper startCheckVersion];
-    }
+        //[defaultHelper startCheckVersion];
+      
+        NSDictionary *params = @{@"user_id" : @"11223344556601",
+                                 @"user_role" : @"00010015",
+                                 @"user_department" : @"DP13852"
+     };
+        self.updateHelper.customData = params;
+      
+      
 }
 
 #pragma mark TTAppUpdateDelegate
