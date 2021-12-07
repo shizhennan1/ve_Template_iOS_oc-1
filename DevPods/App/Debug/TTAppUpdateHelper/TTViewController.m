@@ -40,9 +40,9 @@
         self.updateHelper.callType = @(0);
 
         self.updateHelper.city = @"Shanghai";
-        NSDictionary *params = @{@"user_id" : @"1234501",
-                                 @"user_role" : @"00010015",
-                                 @"user_department" : @"DP13852",
+        NSDictionary *params = @{@"user_id" : @"1234545",
+                                 @"user_role" : @"00010014",
+                                 @"user_department" : @"DP00278",
                                  @"channel":@"update"
         };
         self.updateHelper.customData = params;
