@@ -34,12 +34,13 @@
         __block id<OKDeviceService> deviceService = [[OKServiceCenter sharedInstance] serviceForProtocol:@protocol(OKDeviceService)];
         OKApplicationInfo *info = [OKApplicationInfo sharedInstance];
         TTAppUpdateHelperDefault *defaultHelper = [[TTAppUpdateHelperDefault alloc] initWithDeviceID:deviceService.deviceID
+                                                                                                     channel:@"update"
                                                                                                  aid:info.appID delegate:self];
         self.updateHelper = defaultHelper;
         self.updateHelper.callType = @(0);
 
         self.updateHelper.city = @"Shanghai";
-        NSDictionary *params = @{@"user_id" : @"11223344556601",
+        NSDictionary *params = @{@"user_id" : @"1234501",
                                  @"user_role" : @"00010015",
                                  @"user_department" : @"DP13852"
         };
