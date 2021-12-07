@@ -42,7 +42,7 @@
         self.updateHelper.city = @"Shanghai";
         NSDictionary *params = @{@"user_id" : @"1234501",
                                  @"user_role" : @"00010015",
-                                 @"user_department" : @"DP13852"
+                                 @"user_department" : @"DP13852",
                                  @"channel":@"update"
         };
         self.updateHelper.customData = params;
