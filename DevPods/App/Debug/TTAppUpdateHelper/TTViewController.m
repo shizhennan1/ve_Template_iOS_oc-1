@@ -34,16 +34,16 @@
         __block id<OKDeviceService> deviceService = [[OKServiceCenter sharedInstance] serviceForProtocol:@protocol(OKDeviceService)];
         OKApplicationInfo *info = [OKApplicationInfo sharedInstance];
         TTAppUpdateHelperDefault *defaultHelper = [[TTAppUpdateHelperDefault alloc] initWithDeviceID:deviceService.deviceID
-                                                                                                     channel:@"release"
                                                                                                  aid:info.appID delegate:self];
         self.updateHelper = defaultHelper;
         self.updateHelper.callType = @(0);
-      
-        self.updateHelper.city = @"Beijing";
-        self.updateHelper.user_id = @"11223344556601";
-        self.updateHelper.user_role = @"00010015";
-        self.updateHelper.user_department = @"DP13852";
-      
+
+        self.updateHelper.city = @"Shanghai";
+        NSDictionary *params = @{@"user_id" : @"11223344556601",
+                                 @"user_role" : @"00010015",
+                                 @"user_department" : @"DP13852"
+        };
+        self.updateHelper.customData = params;
         [defaultHelper startCheckVersion];
       
       
