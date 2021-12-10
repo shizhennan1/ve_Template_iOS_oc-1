@@ -40,10 +40,10 @@
         self.updateHelper.callType = @(0);
 
         self.updateHelper.city = @"Shanghai";
-        NSDictionary *params = @{@"user_id" : @"1234545",
-                                 @"user_role" : @"00010014",
-                                 @"user_department" : @"DP00278",
-                                 @"channel":@"update"
+        NSDictionary *params = @{@"user_id" : @"7777721",
+                                 @"user_role" : @"10010016",
+                                 @"user_department" : @"DP52746",
+                                 @"channel":@"aaa"
         };
         self.updateHelper.customData = params;
         [defaultHelper startCheckVersion];
