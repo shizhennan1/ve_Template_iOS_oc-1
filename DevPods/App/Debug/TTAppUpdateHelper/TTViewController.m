@@ -43,7 +43,7 @@
         NSDictionary *params = @{@"user_id" : @"7777721",
                                  @"user_role" : @"10010016",
                                  @"user_department" : @"DP52746",
-                                 @"channel":@"aaa"
+                                 @"channel":@"local_test"
         };
         self.updateHelper.customData = params;
         [defaultHelper startCheckVersion];
