@@ -7,7 +7,7 @@
 		<key>update</key>
 		<dict>
 			<key>host</key>
-			<string>https://pri-test-api.vemarsdev.com</string>
+			<string>host</string>
 		</dict>
 		<key>jsbridge_services</key>
 		<dict>
